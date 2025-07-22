@@ -1,8 +1,24 @@
-<h1>Home Page</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-  <p>Lorem ipsum dolor sit amet, et proin, justo mus. Porta suspendisse turpis netus sagittis tortor at, vitae aliquet
-    pharetra cras velit, id gravida, neque nulla lorem, posuere hac. Ultricies eget lacus vehicula, in ante aliquam
-    et,facilisis tempor duis orci. Sed molestie sem in duis eu id, nisl id ultricies metus blandit eget praesent, pede
-    tempornullam, vitae arcu tortor suspendisse nibh risus. Nulla id suscipit reiciendis nulla erat. Porta enim aute
-    luctus,ducimus sodales dolor.
-  </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <%- include("partials/header.ejs") %>
+    <div class="homepage">
+      <div class="homepage-img">
+        <img src="/images/coverImage.jpg" alt="An image of myself, Ryan Frazin" id="profileImage">
+      </div>
+      <div id="homepage-text">
+        <h1>Hi, I'm Ryan.</h1>
+        <p>Welcome to my site. Click "about" to learn more about me!</p>
+        <button>Contact</button>
+      </div>
+    </div>
+</body>
+
+</html>
