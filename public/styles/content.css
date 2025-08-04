@@ -69,6 +69,7 @@ h1 {
 
 .homepage {
     display: flex;
+    justify-content: center;
 }
 
 #homepage-text {
@@ -76,7 +77,8 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 900px;
+    margin: 100px;
+    width: 700px;
     animation: moveUp 1s ease-out forwards 0.5s;
     opacity: 0;
 }
