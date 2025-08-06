@@ -1,5 +1,6 @@
 :root {
   --primary-color: #4ca6f6;
+  --move-up: moveUp 2s ease-out forwards 0.5s;
 }
 
 html,
@@ -131,12 +132,13 @@ button:hover {
 
 .homepage-options {
     position: relative;
-    background-color: white;
-    animation: moveUp 2s ease-out forwards 0.5s;
+    background-color: transparent;
+    animation: var(--move-up);
     opacity: 0;
     border: 1px solid black;
     font-size: 80px;
     padding: 20px;
+    margin-top: 100px;
 }
 .homepage-options.show {
     opacity: 1;
@@ -153,7 +155,25 @@ button:hover {
     left: -100px;
 }
 
-#homepage-contact {
+#homepage-about {
     right: -100px;
     text-align: right;
+    margin-top: 10px;
+}
+
+#contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  opacity: 0;
+  animation: var(--move-up);
+}
+
+.icon {
+  width: 30px;
+  margin: 10px;
+}
+.icon:hover {
+  cursor: pointer;
 }
