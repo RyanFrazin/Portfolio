@@ -1,5 +1,5 @@
-import express from "express";
-
+const express = require('express');
+const path = require('path');
 const app = express();
 const port = 3000;
 
@@ -11,6 +11,20 @@ app.get("/", (req, res) => {
 
 app.get("/contact", (req, res) => {
     res.render("contact.ejs");
+});
+
+app.get("/about", (req, res) => {
+    res.render("about.ejs");
+});
+
+app.get('/download/resume', (req, res) => {
+    const fileName = 'RyanFrazin.pdf';
+    const filePath = path.join(__dirname, 'views', 'files', 'RyanFrazin.pdf');
+    res.download(filePath, fileName, (err) => {
+        if(err) {
+            res.status(404).send('File not found');
+        }
+    })
 })
 
 app.listen(port, (req, res) => {
