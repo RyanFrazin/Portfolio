@@ -85,6 +85,8 @@ button:hover {
 .homepage {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #homepage-text {
@@ -115,4 +117,43 @@ button:hover {
   width: 100px;
   height: 100px;
   background-color: black;
+}
+
+#homepage-links {
+    width: 500px;
+    height: auto;
+}
+
+#homepage-intro {
+    display: flex;
+    flex-direction: row;
+}
+
+.homepage-options {
+    position: relative;
+    background-color: white;
+    animation: moveUp 2s ease-out forwards 0.5s;
+    opacity: 0;
+    border: 1px solid black;
+    font-size: 80px;
+    padding: 20px;
+}
+.homepage-options.show {
+    opacity: 1;
+}
+.homepage-options:hover {
+    cursor: pointer;
+    font-size: 82px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--primary-color);
+    transition: 0.3s;
+}
+
+#homepage-projects {
+    left: -100px;
+}
+
+#homepage-contact {
+    right: -100px;
+    text-align: right;
 }
