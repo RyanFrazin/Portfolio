@@ -208,3 +208,19 @@ button:hover {
   color: blue;
   text-decoration: underline;
 }
+
+#about-me {
+  opacity: 0;
+  animation: var(--move-up);
+}
+#about-me.show {
+  opacity: 1;
+}
+
+#resume {
+  opacity: 0;
+  animation: var(--move-up);
+}
+#resume.show {
+  opacity: 1;
+}
