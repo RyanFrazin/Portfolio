@@ -25,6 +25,10 @@ app.get('/download/resume', (req, res) => {
             res.status(404).send('File not found');
         }
     })
+});
+
+app.get('/projects', (req, res) => {
+    res.render("projects.ejs");
 })
 
 app.listen(port, (req, res) => {
