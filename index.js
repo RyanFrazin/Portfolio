@@ -19,7 +19,7 @@ app.get("/about", (req, res) => {
 
 app.get('/download/resume', (req, res) => {
     const fileName = 'RyanFrazin.pdf';
-    const filePath = path.join(__dirname, 'views', 'files', 'RyanFrazin.pdf');
+    const filePath = path.join(__dirname, 'views', 'files', 'ryanfrazin.pdf');
     res.download(filePath, fileName, (err) => {
         if(err) {
             res.status(404).send('File not found');
