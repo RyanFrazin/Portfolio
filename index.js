@@ -18,7 +18,7 @@ app.get("/about", (req, res) => {
 });
 
 app.get('/download/resume', (req, res) => {
-    const fileName = 'RyanFrazin.pdf';
+    const fileName = 'RyanFrazinResume.pdf';
     const filePath = path.join(__dirname, 'views', 'files', 'RyanFrazinResume.pdf');
     res.download(filePath, fileName, (err) => {
         if(err) {
