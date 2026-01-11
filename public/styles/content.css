@@ -125,7 +125,7 @@ button:hover {
   display: grid;
   justify-content: center;
   align-items: center;
-  max-width: 900px;
+  max-width: 980px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   animation: var(--move-up);
   opacity: 0;
@@ -144,7 +144,7 @@ button:hover {
 }
 
 .project-title {
-  width: 220px;
+  width: 300px;
 }
 
 .project-image {
